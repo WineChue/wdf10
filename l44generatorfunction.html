@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Generator Function
+        </title>
+    </head>
+    <body>
+        
+        <script type="text/javascript">
+
+            //Generator Function
+
+            function test1(){
+                return 10;
+            }
+            console.log(test1()); //10
+            console.log(test1()); //10
+            console.log(test1()); //10
+
+            function test2(){
+                var x = 1;
+                x++;
+                return x;
+            }
+            console.log(test2()); //2
+            console.log(test2()); //2
+            console.log(test2()); //2
+
+            var y = 1; //global scope
+            function test3(){
+                y++;
+                return y;
+            }
+            console.log(test3()); //2
+            console.log(test3()); //3
+            console.log(test3()); //4
+
+            //Generator Function
+            function* genfun(){
+                // yield 1;
+
+                yield 1;
+                yield 2;
+                yield 3;
+            }
+
+            console.log(genfun()); //genfun {<suspended>}
+            console.log(genfun().next()); //{value: 1, done: false}
+
+            console.log(genfun().next().value); //1
+            console.log(genfun().next().value); //undefined
+            console.log(genfun().next().value); //undefined
+
+            const getgenfun = genfun();
+
+            console.log(getgenfun); //genfun {<suspended>}
+            console.log(getgenfun.next()); //{value: 1, done: false}
+            
+            console.log(getgenfun.next().value); //1
+            console.log(getgenfun.next().value); //2
+            console.log(getgenfun.next().value); //3
+            console.log(getgenfun.next().value); //undefined
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

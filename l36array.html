@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Array
+        </title>
+    </head>
+    <body>
+        
+
+
+
+        <script type="text/javascript">
+
+            let arrgirls = new Array("su su","nu nu","lu lu","hla hla");
+            console.log(arrgirls);
+            console.table(arrgirls);
+            console.log(arrgirls.length);
+
+            const arrboys = ["mg mg","naung naung","kyaw gyi","zaw zaw",200];
+            console.log(arrboys);
+            console.table(arrboys);
+            console.info(arrboys.length);
+            console.log(typeof arrboys);
+
+            console.log(arrboys[0]);
+            console.log(arrboys[1]);
+            console.log(arrboys[2]);
+            console.log(typeof arrboys[0]);
+            console.log(arrboys[4]);
+            console.log(typeof arrboys[4]);
+            console.log(arrboys.length);
+            console.log(arrboys[arrboys.length-1]);
+
+            console.log(arrboys[arrboys.length-3]);
+
+            let myarrs = ["hello",1500,true,undefined,null,new Date(),["red","green"],{firstname:"kyaw kyaw", age:20,city :"Yangon"}];
+
+            console.log(myarrs);
+            console.log(myarrs.length);
+            console.log(myarrs[0]);
+            console.log(myarrs[4]);
+            console.log(myarrs[5]);
+            console.log(myarrs[6][1]);
+            console.log(myarrs[7]);
+            console.log(myarrs[7].firstname);
+            console.log(myarrs[7].age);
+            console.log(myarrs[7].city);
+            //--------------------------------------------------------
+
+            //Array can overwrite
+
+            let colors = ["red","green","blue"];
+                colors = ["rgba","cmyk","hsla"];
+
+                console.log(colors);
+
+            let paints = [];
+
+            paints[3]="blue";
+            paints[0]="red";
+            paints[1]="green";
+            paints[2]="yellow";
+            paints[3]="cyan";
+            paints[5]="steelblue";
+            paints[2]="brown";
+
+            console.log(paints);
+            console.log(paints.length);
+            console.log(paints[4]);
+
+            let animals = ["cat","dog"];
+            animals[2]= "owl";
+            animals[3]="fish";
+            animals[5]="tiger";
+            animals[0]="cow";
+
+            console.log(animals);
+            console.log(animals.length);
+
+            console.log(animals[5]);
+            console.log(animals[6]);
+
+            //Nested Array
+
+            const nestarrs = [
+                ["red","green","blue"],
+                ["cmyk",'rgba','hsla'],
+                ["cannon","epson",["laser","ink"]]
+            ]
+
+            console.log(nestarrs);
+            console.log(nestarrs.length);
+            console.log(nestarrs[0]);
+            console.log(nestarrs[1][1]);
+            console.log(nestarrs[2][2][1]);
+
+
+        </script>
+    </body>
+</html>

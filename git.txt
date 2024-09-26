@@ -1,0 +1,64 @@
+=>git
+
+=One Times
+after gift install
+git 
+git --version   (git version 2.39.2)
+
+git config --global user.name "Tin Htut Aung" (can overwrite to change)
+
+git config user.name 
+
+git config --global user.email "datalandtechnology@gmail.com"
+
+git config user.email
+
+
+
+=>SSH (Secure Shell) (Pub-file ka SSH key pat htat ya mal)
+
+ssh-keygen 
+
+ssh -T git@github.com (We can check ssh successful or not by this comment)
+
+
+
+=>github
+( 1project 1times )
+git init 
+git remote add origin "git@github.com:datalandtechnology/pttsoftware.git"
+
+git remote add origin "git@github.com:WineChue/pttsoftware.git"
+
+
+(as to you)
+git status          (thein like p lar thein tay bu lar sis tar)
+git add -A          (git add *)
+git status 
+git commit -m "my first project"
+git push -u origin main/master
+
+=>Update 
+git status
+git add -A          (git add *)
+git commit -m "my first project 22:50 12/3/24"
+git status
+git push -u origin main
+git status
+
+=>Clone comment
+git clone repository link    (main file/read file)
+
+pull Request 
+
+create folder 
+gi tinit 
+git remote add origin hhs Rote(Link)
+git pull origin main (master)
+
+--------------------------------------------------------------------------------
+
+12FN
+
+
+

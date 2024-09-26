@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        
+
+
+        <script type="text/javascript">
+                let students = {
+                    firstname:"Honey",
+                    middlename:"Nway",
+                    lastname:"Oo",
+                    age:"22"
+                };
+
+                console.log(students);
+                console.info(students);
+                console.table(students);
+                console.log(typeof students);
+
+                console.log(students.firstname);
+                console.log(students.middlename);
+                console.log(students.lastname);
+                console.log(students.age);
+
+                const persons = {
+                    firstname : "kyaw kyaw",
+                    lastname : "htay lwin",
+                    age : 43,
+                    single : true,
+                    email : "kyawkyaw@gmail.com",
+
+                    address : {
+                        street : "62st",
+                        city : "Alone"
+                    },
+                    hometown : {
+                        city : "Yangon"
+                    },
+                    hobbies : ["music","cooking","code","sport"]
+                };
+
+                console.log(persons);
+                console.table(persons);
+
+                console.log(persons.firstname);
+                console.log(persons.lastname);
+                console.log(persons.age);
+                console.log(persons.single);
+                console.log(typeof persons); //object
+
+                console.log(persons.address);
+                console.log(persons.address.city); //Alone
+
+                console.log(persons.address); 
+                console.log(persons.address.street); //62st
+
+                console.log(persons.hometown);
+                console.log(persons.hometown.city); //Yangon
+
+                console.log(persons.hobbies[1]);
+                console.log(persons.hobbies[2]);
+                console.log(persons.hobbies[3]);
+                console.log(persons.hobbies[4]); //undefined
+                console.log(persons.hobbies.length); //4
+                console.log(persons.hobbies.length-1); //3
+
+
+
+
+
+        </script>
+    </body>
+</html>
