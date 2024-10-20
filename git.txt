@@ -47,7 +47,7 @@ git push -u origin main
 git status
 
 =>Clone comment
-git clone repository link    (main file/read file)
+git clone repository link => (eg git@github.com:WineChue/pttsoftware.git)   (main file/read file)
 
 pull Request 
 

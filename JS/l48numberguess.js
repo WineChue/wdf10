@@ -10,6 +10,7 @@ const minnum = document.querySelector('.minnumber'),
 
 const   min = 0,
         max = 10,
+        // winningnum = 5;
         winningnum = randomnum(min,max);
 
 let gameleft = 3;
@@ -36,11 +37,12 @@ getbtn.addEventListener('click',function(e){
     }
 
     if(guess === winningnum){
+
         // Gameover Won 
         // console.log("You Won");
 
         // disabled getinput 
-        getinput.disabled = true;    //Attribute ko direct lan khon lo ya tal 
+        // getinput.disabled = true;    //Attribute ko direct lan khon lo ya tal 
 
         // getinput border color to green 
         // getinput.style.borderColor = "green";
@@ -49,12 +51,14 @@ getbtn.addEventListener('click',function(e){
             // message1.textContent = `Game Over!! You Won , The correct number is ${winningnum}`;
             // message1.style.color = "green";
 
-        setmessage1(`${winningnum} is correct !! You Won`,"green");
+        // setmessage1(`${winningnum} is correct !! You Won`,"green");
 
         // Play Again
         // getbtn.value = "Play Again";
 
         // gameover(true,`${winningnum} is correct !! You Won`);
+
+        gameover(true,`${winningnum} is correct !! You Won`);
 
     }else{
 
@@ -77,12 +81,12 @@ getbtn.addEventListener('click',function(e){
         //Message1
             // message1.textContent = `Game Over!! You Lose , The correct number is ${winningnum}`;
             // message1.style.color = "red";
-        setmessage1(`Game Over!! You Lose , The correct number is ${winningnum}`,"red");
+        // setmessage1(`Game Over!! You Lose , The correct number is ${winningnum}`,"red");
 
         //play again? 
         // getbtn.value = "Play again?";
 
-        // gameover(false,`Game Over!! You Lose , The correct number is ${winningnum}`);
+        gameover(false,`Game Over!! You Lose , The correct number is ${winningnum}`);
 
 
         }else{
@@ -102,7 +106,7 @@ getbtn.addEventListener('click',function(e){
             // auto focus getinput 
             getinput.focus();
     
-            gameover(false,`${guess} is not correct! ${gameleft} guess left`);
+            // gameover(blue,`${guess} is not correct! ${gameleft} guess left`);
             
         }
 
@@ -156,11 +160,14 @@ function gameover(won,msg){
 
 //A nu sate tal 
 //phe pe kyua like tat a chain ma work mal mosuedown ka
-getgameform.addEventListener('mousepress',function(e){
+
+
+getgameform.addEventListener('mousedown',function(e){
     // console.log(e.target);
 
     // e.target.classList.contains("playagain")
-    if(e.target.className === "btn playagain"){
+    if(e.target.className === "btn playagain")
+    {
         // console.log("I am working");
 
         window.location.reload();
